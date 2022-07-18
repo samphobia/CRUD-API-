@@ -1,10 +1,10 @@
 const mysql = require('mysql2');
 
 const dbConn = mysql.createConnection({
-      host: 'localhost',
-      port: 3306,
-      user: 'root',
-      password: 'AsfastasaHumanhurricane01!',
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASS,
       database: 'blackhole'
 })
 
